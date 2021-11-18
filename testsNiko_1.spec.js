@@ -1,11 +1,6 @@
 describe('', () => {
-  let user;
 
-  before(() => {
-    cy.task('newUser').then((newUser) => {
-      user = newUser;
-    });
-  });
+//Log in
 
   it('', () => {
     cy.visit('http://localhost:1667/#/');
@@ -21,7 +16,9 @@ describe('', () => {
       .contains('Cypress')
       .should('exist');
   })
-})
+});
+
+//Sign Up & log out
 
   let user;
 
